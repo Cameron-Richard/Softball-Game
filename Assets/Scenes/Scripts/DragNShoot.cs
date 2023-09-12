@@ -44,14 +44,14 @@ public class DragNShoot : MonoBehaviour
         startPoint.z = 15;
     }
 
-    if (Input.GetMouseButton(0)  &&isStill == true)
+    if (Input.GetMouseButton(0) &&isStill == true)
     {
       Vector3 currentPoint = cam.ScreenToWorldPoint(Input.mousePosition);
       currentPoint.z = 15;
       tl.RenderLine(startPoint, currentPoint);
     }
 
-    if (Input.GetMouseButtonUp(0)  &&isStill == true)
+    if (Input.GetMouseButtonUp(0) &&isStill == true)
     {
         endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
         endPoint.z = 15;
