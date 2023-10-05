@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 16-bit-spike-Sheet_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1605820773, guid: bc588c09401e4a94d996b8cd625a3fb6, type: 3}
+  m_Sprite: {fileID: 2103599180, guid: 71bd6f947ffac404b910adb0cce69299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
