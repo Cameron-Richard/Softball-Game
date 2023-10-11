@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class KillPlayer : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public GameObject respawnPoint;
 
     void Start()
     {
@@ -32,6 +33,9 @@ public class KillPlayer : MonoBehaviour
     private IEnumerator waitThenLoad()
     {
         yield return new WaitForSecondsRealtime(1.0f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        transform.position = respawnPoint.transform.position;
+        gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        gameObject.GetComponent<LineRenderer>().enabled = true;
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 }

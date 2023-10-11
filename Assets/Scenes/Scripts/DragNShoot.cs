@@ -19,6 +19,8 @@ public class DragNShoot : MonoBehaviour
 
   bool isStill = true;
 
+  public CoinManager cm;
+
   private void Start()
   {
     cam = Camera.main;
