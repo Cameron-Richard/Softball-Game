@@ -17,9 +17,7 @@ public class DragNShoot : MonoBehaviour
   Vector3 startPoint;
   Vector3 endPoint;
 
-  bool isStill = true;
-
-  public CoinManager cm;
+  public bool isStill = true;
 
   private void Start()
   {

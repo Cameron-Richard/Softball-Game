@@ -9,6 +9,7 @@ public class WallStick : MonoBehaviour
     public bool canRotate = false;
 
 	public CoinManager cm;
+	[SerializeField] DragNShoot iS;
     void OnCollisionEnter2D(Collision2D collison){
 		if(collison.transform.tag != "Player"){
 			if (!Input.GetMouseButtonDown (0)) {
@@ -20,15 +21,15 @@ public class WallStick : MonoBehaviour
 		} 
 	}
 
-	void OnCollisionExit2D(Collision2D collision){
-		if(collision.transform.tag != "Player"){
-			canRotate = false;
-		}
-	}
+	//void OnCollisionExit2D(Collision2D collision){
+	//	if(collision.transform.tag != "Player"){
+	//		canRotate = false;
+	//	}
+	//}
 
 	void Update()
 	{
-		if(canRotate == false){
+		if(iS.isStill == false){
 			RotateObjectAroundZAxis();
 		}
 	}
