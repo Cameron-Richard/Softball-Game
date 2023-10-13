@@ -7,6 +7,7 @@ public class KillPlayer : MonoBehaviour
 {
     public Rigidbody2D rb;
     public GameObject respawnPoint;
+	public AudioSource source;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class KillPlayer : MonoBehaviour
         if(other.gameObject.CompareTag("Spike"))
         {
             StartCoroutine(waitThenLoad());
+            source.Play();
             gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
             gameObject.GetComponent<LineRenderer>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
