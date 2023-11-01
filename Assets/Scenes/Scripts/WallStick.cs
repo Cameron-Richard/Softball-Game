@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WallStick : MonoBehaviour
 {
-	public float rotationSpeed = 700f;
+	public float rotationSpeed = 500f;
     public Rigidbody2D rb;
     public bool canRotate = false;
 

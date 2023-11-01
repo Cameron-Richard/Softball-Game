@@ -8,6 +8,8 @@ public class KillPlayer : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject respawnPoint;
 	public AudioSource source;
+    [Range(0.1f, 0.7f)]
+    public float pitchChangeMultiplier = 0.2f;
 
     void Start()
     {
@@ -25,10 +27,13 @@ public class KillPlayer : MonoBehaviour
         if(other.gameObject.CompareTag("Spike"))
         {
             StartCoroutine(waitThenLoad());
+            source.pitch = Random.Range(1-pitchChangeMultiplier, 1+pitchChangeMultiplier);
             source.Play();
             gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
             gameObject.GetComponent<LineRenderer>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<ParticleSystem>().Play();
+            GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 

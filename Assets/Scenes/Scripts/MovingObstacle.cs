@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingObstacle : MonoBehaviour
 {
     [SerializeField] private Transform[] _waypoints;
     [SerializeField] private float _speed;
@@ -10,6 +10,7 @@ public class MovingPlatform : MonoBehaviour
 
     private Transform _targetWaypoint;
     private int _currentWaypointIndex = 0;
+    public float rotationSpeed = 700f;
 
     void Start()
     {
@@ -28,6 +29,8 @@ public class MovingPlatform : MonoBehaviour
         {
             _targetWaypoint = GetNextWaypoint();
         }
+
+        transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
     }
 
     private Transform GetNextWaypoint()
