@@ -4958,6 +4958,8 @@ MonoBehaviour:
   minPower: {x: -8, y: -8}
   maxPower: {x: 8, y: 8}
   isStill: 1
+  mySounds: {fileID: 6750934505016163116}
+  launchSound: {fileID: 8300000, guid: 75a21f04b92ff51458930db2cbc946a1, type: 3}
 --- !u!120 &8650172507007256908
 LineRenderer:
   serializedVersion: 2
@@ -5114,6 +5116,7 @@ MonoBehaviour:
   rb: {fileID: 839744456009741308}
   respawnPoint: {fileID: 0}
   source: {fileID: 4757863774933825130}
+  pitchChangeMultiplier: 0.2
 --- !u!82 &6750934505016163116
 AudioSource:
   m_ObjectHideFlags: 0

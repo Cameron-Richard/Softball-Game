@@ -19,6 +19,9 @@ public class DragNShoot : MonoBehaviour
 
   public bool isStill = true;
 
+  public AudioSource mySounds;
+  public AudioClip launchSound;
+
   private void Start()
   {
     cam = Camera.main;
@@ -58,8 +61,15 @@ public class DragNShoot : MonoBehaviour
 
         force = new Vector2(Mathf.Clamp(startPoint.x - endPoint.x, minPower.x, maxPower.x), Mathf.Clamp(startPoint.y - endPoint.y, minPower.y, maxPower.y));
         rb.AddForce(force * power, ForceMode2D.Impulse);
+        PlayerSound(launchSound);
         tl.EndLine();
 			  rb.constraints = RigidbodyConstraints2D.None;
     }
   }
+
+  public void PlayerSound(AudioClip clip)
+  {
+    mySounds.PlayOneShot(launchSound);
+  }
+
 }

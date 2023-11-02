@@ -71,6 +71,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    void PlaySFXMusic(AudioClip clip)
+    {
+        if (SFXSource.clip != clip)
+        {
+            SFXSource.clip = clip;
+            SFXSource.Play();
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

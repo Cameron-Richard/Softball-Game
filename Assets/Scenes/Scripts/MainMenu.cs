@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(waitThenLoad());
     }
 
     public void PlayTutorial()
@@ -17,12 +17,24 @@ public class MainMenu : MonoBehaviour
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + -1);
+        StartCoroutine(waitThenLoadBackButton());
     }
 
     public void QuitGame()
     {
         Debug.Log("Quit!");
         Application.Quit();
+    }
+
+    private IEnumerator waitThenLoad()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    private IEnumerator waitThenLoadBackButton()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + -1);
     }
 }

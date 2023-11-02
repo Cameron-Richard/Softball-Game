@@ -8,7 +8,7 @@ public class KillPlayer : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject respawnPoint;
 	public AudioSource source;
-    [Range(0.1f, 0.7f)]
+    [Range(0.1f, 1.1f)]
     public float pitchChangeMultiplier = 0.2f;
 
     void Start()
