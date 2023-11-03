@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lephelthrei.unity
     guid: 979b44951386f7c40a4f667154eba78f
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: f9b289bc1f2544f46a82c0ab1ce0ec08
   m_configObjects: {}

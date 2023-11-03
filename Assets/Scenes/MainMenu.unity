@@ -1216,6 +1216,7 @@ MonoBehaviour:
   bgmScene2: {fileID: 0}
   bgmScene3: {fileID: 0}
   bgmScene4: {fileID: 0}
+  bgmScene5: {fileID: 0}
 --- !u!1 &677225053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,6 +2362,7 @@ MonoBehaviour:
   bgmScene2: {fileID: 8300000, guid: bf0b970736aae6c45873240b0f7eae05, type: 3}
   bgmScene3: {fileID: 8300000, guid: 5794515fc204fbd41928542bf4ca8288, type: 3}
   bgmScene4: {fileID: 8300000, guid: 8c2c6add7f2cf894fac3b1471839cd63, type: 3}
+  bgmScene5: {fileID: 8300000, guid: fbaf9127e21d27942b29ef360bc1ab1a, type: 3}
 --- !u!4 &999440360
 Transform:
   m_ObjectHideFlags: 0

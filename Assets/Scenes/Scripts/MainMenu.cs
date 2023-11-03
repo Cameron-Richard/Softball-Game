@@ -20,6 +20,11 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(waitThenLoadBackButton());
     }
 
+    public void PlayLevel1()
+    {
+        StartCoroutine(waitThenLoadLevel1());
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit!");
@@ -36,5 +41,11 @@ public class MainMenu : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + -1);
+    }
+
+    private IEnumerator waitThenLoadLevel1()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
     }
 }
