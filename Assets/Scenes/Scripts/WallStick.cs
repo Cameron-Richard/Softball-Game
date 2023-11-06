@@ -21,12 +21,6 @@ public class WallStick : MonoBehaviour
 		} 
 	}
 
-	//void OnCollisionExit2D(Collision2D collision){
-	//	if(collision.transform.tag != "Player"){
-	//		canRotate = false;
-	//	}
-	//}
-
 	void Update()
 	{
 		if(iS.isStill == false){
