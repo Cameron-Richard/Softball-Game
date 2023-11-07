@@ -46,6 +46,6 @@ public class MainMenu : MonoBehaviour
     private IEnumerator waitThenLoadLevel1()
     {
         yield return new WaitForSecondsRealtime(0.2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene("Level1");
     }
 }

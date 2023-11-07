@@ -8,6 +8,7 @@ TagManager:
   - Spike
   - Coin
   - Platform
+  - AudioManager
   layers:
   - Default
   - TransparentFX
