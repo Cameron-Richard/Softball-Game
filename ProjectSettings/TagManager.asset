@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Platform
   - AudioManager
+  - Background
   layers:
   - Default
   - TransparentFX
