@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip bgmScene3;
     public AudioClip bgmScene4;
     public AudioClip bgmScene5;
+    public AudioClip bgmScene6;
 
     public static AudioManager instance;
 
@@ -63,6 +64,10 @@ public class AudioManager : MonoBehaviour
         else if (scene.name == "Level1")
         {
             PlayBackgroundMusic(bgmScene5);
+        }
+        else if (scene.name == "Level2")
+        {
+            PlayBackgroundMusic(bgmScene6);
         }
     }
 
