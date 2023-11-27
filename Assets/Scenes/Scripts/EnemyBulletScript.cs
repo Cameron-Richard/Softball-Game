@@ -14,4 +14,10 @@ public class EnemyBulletScript : MonoBehaviour
 
         Destroy(gameObject, lifetime);
     }
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		Destroy(gameObject);
+	}
+
 }
