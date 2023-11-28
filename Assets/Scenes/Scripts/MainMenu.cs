@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public Animator transition;
+    
     public void PlayGame()
     {
         StartCoroutine(waitThenLoad());
@@ -12,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayTutorial()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(waitThenLoadLevelSelect());
     }
 
     public void BackToMenu()
@@ -38,25 +40,36 @@ public class MainMenu : MonoBehaviour
 
     private IEnumerator waitThenLoad()
     {
-        yield return new WaitForSecondsRealtime(0.2f);
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    private IEnumerator waitThenLoadLevelSelect()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private IEnumerator waitThenLoadBackButton()
     {
-        yield return new WaitForSecondsRealtime(0.2f);
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + -1);
     }
 
     private IEnumerator waitThenLoadLevel1()
     {
-        yield return new WaitForSecondsRealtime(0.2f);
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("Level1");
     }
 
     private IEnumerator waitThenLoadLevel2()
     {
-        yield return new WaitForSecondsRealtime(0.2f);
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("Level2");
     }
 }

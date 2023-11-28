@@ -22,7 +22,6 @@ public class Level_Finish : MonoBehaviour
         {
             Winscreen.SetActive(true);
             rankLetter();
-            Time.timeScale = 0f;
         }
     }
 
