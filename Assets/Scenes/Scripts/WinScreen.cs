@@ -39,6 +39,6 @@ public class WinScreen : MonoBehaviour
     {
         transition.SetTrigger("Start");
         yield return new WaitForSecondsRealtime(1f);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("LevelSelect");
     }
 }

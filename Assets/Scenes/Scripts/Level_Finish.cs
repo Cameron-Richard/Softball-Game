@@ -7,8 +7,11 @@ using TMPro;
 public class Level_Finish : MonoBehaviour
 {
     public GameObject Winscreen;
+    public GameObject Ball;
     public TMP_Text rankText;
     public DeathCounter deathCounter;
+    public Rigidbody2D rb;
+	[SerializeField] DragNShoot iS;
     public float deathS = 0;
     public float deathA = 0;
     public float deathB = 0;
@@ -22,6 +25,10 @@ public class Level_Finish : MonoBehaviour
         {
             Winscreen.SetActive(true);
             rankLetter();
+            Ball.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+            Ball.gameObject.GetComponent<LineRenderer>().enabled = false;
+
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         }
     }
 
