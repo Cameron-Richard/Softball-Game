@@ -18,6 +18,7 @@ public class DragNShoot : MonoBehaviour
   Vector3 endPoint;
 
   public bool isStill = true;
+  public PowerShot aC;
 
   public AudioSource mySounds;
   public AudioClip launchSound;
@@ -58,7 +59,7 @@ public class DragNShoot : MonoBehaviour
     {
         endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
         endPoint.z = 15;
-
+        aC.active = false;
         force = new Vector2(Mathf.Clamp(startPoint.x - endPoint.x, minPower.x, maxPower.x), Mathf.Clamp(startPoint.y - endPoint.y, minPower.y, maxPower.y));
         rb.AddForce(force * power, ForceMode2D.Impulse);
         PlayerSound(launchSound);

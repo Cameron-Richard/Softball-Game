@@ -16,8 +16,14 @@ public class SoundManager : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Coin"))
 		{
-			source.clip = sounds[Random.Range(0, sounds.Length)];
+			source.clip = sounds[Random.Range(0, 2)];
 			source.PlayOneShot(source.clip);
+		}
+
+		else if (other.gameObject.CompareTag("PowerShot"))
+		{
+			source.clip = sounds[3];
+            source.PlayOneShot(source.clip);
 		}
 	}
 }
