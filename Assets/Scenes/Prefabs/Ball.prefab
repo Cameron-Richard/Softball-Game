@@ -5457,8 +5457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae1082ddb75ebad40ad4594cae698db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1810489259804619801}
-  SoundEffect: {fileID: 8300000, guid: 51165a8f531764f4b9ce3ae22d196c1a, type: 3}
   pwr: {fileID: 0}
   active: 0
 --- !u!1 &5988506394972297185

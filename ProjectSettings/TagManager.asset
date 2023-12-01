@@ -11,6 +11,8 @@ TagManager:
   - AudioManager
   - Background
   - PowerShot
+  - BlueTeleporter
+  - OrangeTeleporter
   layers:
   - Default
   - TransparentFX
