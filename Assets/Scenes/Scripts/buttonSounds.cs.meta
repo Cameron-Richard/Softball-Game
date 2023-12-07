@@ -3,7 +3,10 @@ guid: 7d416736af095bc4abd60cc6fb02cd3d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mySounds: {instanceID: 0}
+  - hoverSound: {fileID: 8300000, guid: 4cbab3821398d384d997e1c8516c91fc, type: 3}
+  - clickSound: {fileID: 8300000, guid: cfd09ac6e763a9749a66e3f91a89f308, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -32,6 +32,11 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(waitThenLoadLevel2());
     }
 
+    public void PlayLevel3()
+    {
+        StartCoroutine(waitThenLoadLevel3());
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit!");
@@ -71,5 +76,12 @@ public class MainMenu : MonoBehaviour
         transition.SetTrigger("Start");
         yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("Level2");
+    }
+
+    private IEnumerator waitThenLoadLevel3()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene("Level3");
     }
 }
