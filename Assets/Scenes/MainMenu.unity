@@ -999,7 +999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7742627875064822822, guid: 0c31236b2402f3d4eaa30de7224c9eb1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 450.67786
+      value: 451.3
       objectReference: {fileID: 0}
     - target: {fileID: 7742627875064822822, guid: 0c31236b2402f3d4eaa30de7224c9eb1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1486,6 +1486,7 @@ GameObject:
   - component: {fileID: 764668207}
   - component: {fileID: 764668212}
   - component: {fileID: 764668210}
+  - component: {fileID: 764668214}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -1632,8 +1633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d416736af095bc4abd60cc6fb02cd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySounds: {fileID: 764668213}
-  hoverSound: {fileID: 8300000, guid: 4cbab3821398d384d997e1c8516c91fc, type: 3}
+  mySounds: {fileID: 1724826299}
+  hoverSound: {fileID: 0}
   clickSound: {fileID: 8300000, guid: cfd09ac6e763a9749a66e3f91a89f308, type: 3}
 --- !u!114 &764668212
 MonoBehaviour:
@@ -1652,8 +1653,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 764668210}
-          m_TargetAssemblyTypeName: buttonSounds, Assembly-CSharp
+        - m_Target: {fileID: 764668214}
+          m_TargetAssemblyTypeName: optionshover, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 2
           m_Arguments:
@@ -1776,6 +1777,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &764668214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764668205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40322bb23f9da04088e276284de0b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySounds: {fileID: 764668213}
+  hoverSound: {fileID: 8300000, guid: 4cbab3821398d384d997e1c8516c91fc, type: 3}
 --- !u!1 &765862145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,6 +3330,7 @@ GameObject:
   - component: {fileID: 1724826300}
   - component: {fileID: 1724826299}
   - component: {fileID: 1724826298}
+  - component: {fileID: 1724826301}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -3461,7 +3477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d416736af095bc4abd60cc6fb02cd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySounds: {fileID: 1724826299}
+  mySounds: {fileID: 764668213}
   hoverSound: {fileID: 8300000, guid: 4cbab3821398d384d997e1c8516c91fc, type: 3}
   clickSound: {fileID: 8300000, guid: cfd09ac6e763a9749a66e3f91a89f308, type: 3}
 --- !u!82 &1724826299
@@ -3577,8 +3593,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1724826298}
-          m_TargetAssemblyTypeName: buttonSounds, Assembly-CSharp
+        - m_Target: {fileID: 1724826301}
+          m_TargetAssemblyTypeName: optionshover, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 2
           m_Arguments:
@@ -3593,18 +3609,32 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
+        - m_Target: {fileID: 1724826298}
+          m_TargetAssemblyTypeName: buttonSounds, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 8300000, guid: cfd09ac6e763a9749a66e3f91a89f308, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1724826301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724826293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40322bb23f9da04088e276284de0b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySounds: {fileID: 1724826299}
+  hoverSound: {fileID: 8300000, guid: 4cbab3821398d384d997e1c8516c91fc, type: 3}
 --- !u!1 &1792621506
 GameObject:
   m_ObjectHideFlags: 0
