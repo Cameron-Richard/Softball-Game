@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject Pausemenu;
     public bool isPaused;
+    [SerializeField] DragNShoot lA;
 
     void Start()
     {
@@ -35,6 +36,7 @@ public class PauseMenu : MonoBehaviour
         Pausemenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        lA.launchable = false;
     }
 
     public void ResumeGame()
@@ -42,6 +44,7 @@ public class PauseMenu : MonoBehaviour
         Pausemenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        lA.launchable = true;
     }
 
     public void GoToMainMenu()

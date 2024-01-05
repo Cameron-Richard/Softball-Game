@@ -22,6 +22,9 @@ public class DragNShoot : MonoBehaviour
 
   public AudioSource mySounds;
   public AudioClip launchSound;
+  public bool launchable = true;
+
+  [SerializeField] PauseMenu iP;
 
   private void Start()
   {
@@ -32,12 +35,12 @@ public class DragNShoot : MonoBehaviour
   private void Update()
   {
 
-    if(rb.velocity == new Vector2(0, 0))
+    if(rb.velocity == new Vector2(0, 0) &&iP.isPaused == false)
     {
       isStill = true;
     }
 
-    else
+    else 
     {
       isStill = false;
     }
@@ -70,7 +73,9 @@ public class DragNShoot : MonoBehaviour
 
   public void PlayerSound(AudioClip clip)
   {
-    mySounds.PlayOneShot(launchSound);
+    if(launchable == true){
+      mySounds.PlayOneShot(launchSound);
+    }
   }
 
 }

@@ -12,6 +12,8 @@ public class Level_Finish : MonoBehaviour
     public DeathCounter deathCounter;
     public Rigidbody2D rb;
 	[SerializeField] DragNShoot iS;
+    [SerializeField] DragNShoot lA;
+    [SerializeField] PauseMenu iP;
     public float deathS = 0;
     public float deathA = 0;
     public float deathB = 0;
@@ -27,7 +29,8 @@ public class Level_Finish : MonoBehaviour
             rankLetter();
             Ball.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
             Ball.gameObject.GetComponent<LineRenderer>().enabled = false;
-
+            iS.isStill = false;
+            lA.launchable = false;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         }
     }
