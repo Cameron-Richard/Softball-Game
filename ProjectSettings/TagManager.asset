@@ -13,6 +13,7 @@ TagManager:
   - PowerShot
   - BlueTeleporter
   - OrangeTeleporter
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

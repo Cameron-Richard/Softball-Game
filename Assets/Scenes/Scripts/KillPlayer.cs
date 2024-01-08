@@ -38,6 +38,20 @@ public class KillPlayer : MonoBehaviour
             GetComponent<ParticleSystem>().Play();
             GetComponent<SpriteRenderer>().enabled = false;
         }
+
+        if(other.gameObject.CompareTag("Checkpoint"))
+        {
+            respawnPoint = GameObject.FindGameObjectWithTag("Checkpoint");
+            Debug.Log("Bruh");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Checkpoint"))
+        {
+            respawnPoint = GameObject.FindGameObjectWithTag("Checkpoint");
+        }
     }
 
     private IEnumerator waitThenLoad()
