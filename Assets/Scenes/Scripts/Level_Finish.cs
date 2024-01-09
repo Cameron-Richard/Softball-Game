@@ -40,31 +40,37 @@ public class Level_Finish : MonoBehaviour
         if (deathCounter.deathCount==deathS)
         {
             rankText.SetText("S");
+            rankText.color = Color.red;
         }
 
         else if (deathCounter.deathCount>=deathA && deathCounter.deathCount<=deathB)
         {
             rankText.SetText("A");
+            rankText.color = Color.yellow;
         }
 
         else if (deathCounter.deathCount>=deathB && deathCounter.deathCount<=deathC)
         {
             rankText.SetText("B");
+            rankText.color = Color.cyan;
         }
 
         else if (deathCounter.deathCount>=deathC && deathCounter.deathCount<=deathD)
         {
             rankText.SetText("C");
+            rankText.color = Color.green;
         }
 
         else if (deathCounter.deathCount>=deathD && deathCounter.deathCount<=deathF)
         {
             rankText.SetText("D");
+            rankText.color = Color.blue;
         }
 
         else if (deathCounter.deathCount>=deathF)
         {
             rankText.SetText("F");
+            rankText.color = Color.gray;
         }
     }
 

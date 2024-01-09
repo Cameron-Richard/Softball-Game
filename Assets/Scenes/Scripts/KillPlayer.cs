@@ -50,7 +50,7 @@ public class KillPlayer : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Checkpoint"))
         {
-            respawnPoint = GameObject.FindGameObjectWithTag("Checkpoint");
+            respawnPoint = GameObject.FindGameObjectWithTag("CheckPointSpawn");
         }
     }
 
