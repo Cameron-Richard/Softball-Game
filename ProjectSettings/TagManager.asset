@@ -7,14 +7,13 @@ TagManager:
   - Wall
   - Spike
   - Coin
-  - Platform
   - AudioManager
-  - Background
   - PowerShot
   - BlueTeleporter
   - OrangeTeleporter
   - Checkpoint
   - CheckPointSpawn
+  - HomePlate
   layers:
   - Default
   - TransparentFX

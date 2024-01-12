@@ -35,8 +35,6 @@ public class KillPlayer : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
             gameObject.GetComponent<LineRenderer>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            GetComponent<ParticleSystem>().Play();
-            GetComponent<SpriteRenderer>().enabled = false;
         }
 
         if(other.gameObject.CompareTag("Checkpoint"))

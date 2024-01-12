@@ -29,6 +29,7 @@ public class Level_Finish : MonoBehaviour
             rankLetter();
             Ball.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
             Ball.gameObject.GetComponent<LineRenderer>().enabled = false;
+            Ball.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             iS.isStill = false;
             lA.launchable = false;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
