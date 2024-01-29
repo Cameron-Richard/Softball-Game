@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2332421393421117637}
   - component: {fileID: 7388669963572786108}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: BulletRight
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,8 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f006b5d5278c6448e33fe387bc1c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  lifetime: 2
+  speed: 8
+  lifetime: 20
+  direction: 2
 --- !u!50 &2332421393421117637
 Rigidbody2D:
   serializedVersion: 4

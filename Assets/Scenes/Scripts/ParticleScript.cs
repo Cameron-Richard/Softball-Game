@@ -17,6 +17,7 @@ public class ParticleScript : MonoBehaviour
     {
         if(other.gameObject.CompareTag("HomePlate"))
         {
+            DeathEffect.SetActive(false);
             GetComponent<ParticleSystem>().Play();
             Debug.Log("Steven Aguiar");
         }

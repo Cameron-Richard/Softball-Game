@@ -25,14 +25,7 @@ public class Level_Finish : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            Winscreen.SetActive(true);
-            rankLetter();
-            Ball.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-            Ball.gameObject.GetComponent<LineRenderer>().enabled = false;
-            Ball.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            iS.isStill = false;
-            lA.launchable = false;
-            rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            StartCoroutine("Finish_Screen");
         }
     }
 
@@ -73,6 +66,20 @@ public class Level_Finish : MonoBehaviour
             rankText.SetText("F");
             rankText.color = Color.gray;
         }
+    }
+    
+    private IEnumerator Finish_Screen()
+    {
+        Ball.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        Ball.gameObject.GetComponent<LineRenderer>().enabled = false;
+        Ball.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        yield return new WaitForSecondsRealtime(1f);
+        Winscreen.SetActive(true);
+        rankLetter();
+        iS.isStill = false;
+        lA.launchable = false;
+        
     }
 
 }
