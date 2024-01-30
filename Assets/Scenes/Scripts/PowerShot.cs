@@ -20,13 +20,21 @@ public class PowerShot : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    IEnumerator Respawn (Collider2D collision, int time)
+    {
+        yield return new WaitForSeconds(time);
+
+        collision.gameObject.SetActive(true);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (other.gameObject.CompareTag("PowerShot"))
+		if (collision.gameObject.CompareTag("PowerShot"))
 		{
             pwr.power = 3f;
             active = true;
-            Destroy(other.gameObject);
+            collision.gameObject.SetActive(false);
+            StartCoroutine(Respawn(collision,4));
 		}
 	}
 }
