@@ -37,11 +37,6 @@ public class KillPlayer : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
 
-        if(other.gameObject.CompareTag("Checkpoint"))
-        {
-            respawnPoint = GameObject.FindGameObjectWithTag("Checkpoint");
-            Debug.Log("Bruh");
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

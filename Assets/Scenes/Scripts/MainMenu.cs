@@ -37,6 +37,16 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(waitThenLoadLevel3());
     }
 
+    public void LoadShop()
+    {
+        StartCoroutine(waitThenLoadShopMenu());
+    }
+
+    public void LoadMainMenu()
+    {
+        StartCoroutine(waitThenLoadMainMenu());
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit!");
@@ -83,5 +93,19 @@ public class MainMenu : MonoBehaviour
         transition.SetTrigger("Start");
         yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("Level3");
+    }
+
+    private IEnumerator waitThenLoadShopMenu()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene("ShopMenu");
+    }
+
+    private IEnumerator waitThenLoadMainMenu()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene("MainMenu");
     }
 }
