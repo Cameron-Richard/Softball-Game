@@ -3200,6 +3200,7 @@ MonoBehaviour:
   bgmScene5: {fileID: 8300000, guid: fbaf9127e21d27942b29ef360bc1ab1a, type: 3}
   bgmScene6: {fileID: 8300000, guid: 29bda4d4e97705643bdd05da76914900, type: 3}
   bgmScene7: {fileID: 8300000, guid: c06c7437f7df4e64aa13f3ebe1e2ccf5, type: 3}
+  bgmScene8: {fileID: 8300000, guid: 68dfe4336512ac641a6e94274fc01b20, type: 3}
 --- !u!4 &999440360
 Transform:
   m_ObjectHideFlags: 0
