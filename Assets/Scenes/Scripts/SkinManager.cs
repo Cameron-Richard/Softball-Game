@@ -32,6 +32,6 @@ public class SkinManager : MonoBehaviour
 
     public void SaveSkin()
     {
-        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Scenes/Prefabs/BallReal.prefab");
+        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Scenes/Prefabs/SelectedPaul.prefab");
     }
 }
