@@ -31,7 +31,7 @@ public class PowerShot : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("PowerShot"))
 		{
-            pwr.power = 3f;
+            pwr.power = 3.5f;
             active = true;
             collision.gameObject.SetActive(false);
             StartCoroutine(Respawn(collision,4));

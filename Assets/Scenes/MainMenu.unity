@@ -3198,7 +3198,7 @@ MonoBehaviour:
   bgmScene3: {fileID: 8300000, guid: 5794515fc204fbd41928542bf4ca8288, type: 3}
   bgmScene4: {fileID: 8300000, guid: 8c2c6add7f2cf894fac3b1471839cd63, type: 3}
   bgmScene5: {fileID: 8300000, guid: fbaf9127e21d27942b29ef360bc1ab1a, type: 3}
-  bgmScene6: {fileID: 8300000, guid: 29bda4d4e97705643bdd05da76914900, type: 3}
+  bgmScene6: {fileID: 8300000, guid: f1930c3f3729f5b469e0c74d6b714fcc, type: 3}
   bgmScene7: {fileID: 8300000, guid: c06c7437f7df4e64aa13f3ebe1e2ccf5, type: 3}
   bgmScene8: {fileID: 8300000, guid: 68dfe4336512ac641a6e94274fc01b20, type: 3}
 --- !u!4 &999440360
