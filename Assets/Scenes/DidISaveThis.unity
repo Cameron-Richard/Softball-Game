@@ -502,6 +502,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0079b45f7cd93284a81a03f9ff53359f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Winscreen: {fileID: 0}
+  Ball: {fileID: 0}
+  rankText: {fileID: 0}
+  deathCounter: {fileID: 0}
+  rb: {fileID: 0}
+  iS: {fileID: 0}
+  lA: {fileID: 0}
+  iP: {fileID: 0}
+  deathS: 0
+  deathA: 0
+  deathB: 0
+  deathC: 0
+  deathD: 0
+  deathF: 1
 --- !u!61 &190260786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1027,6 +1041,11 @@ MonoBehaviour:
   minPower: {x: -8, y: -8}
   maxPower: {x: 8, y: 8}
   isStill: 1
+  aC: {fileID: 0}
+  mySounds: {fileID: 0}
+  launchSound: {fileID: 0}
+  launchable: 1
+  iP: {fileID: 0}
 --- !u!50 &237244210
 Rigidbody2D:
   serializedVersion: 4
@@ -1156,6 +1175,8 @@ MonoBehaviour:
   rb: {fileID: 237244210}
   respawnPoint: {fileID: 1649167567}
   source: {fileID: 1997355949}
+  dc: {fileID: 0}
+  pitchChangeMultiplier: 0.2
 --- !u!82 &237244214
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22958,7 +22979,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3054556, y: 1.296875}
+    oldSize: {x: 0.9535942, y: 0.9473264}
     newSize: {x: 1.3054556, y: 1.296875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -23163,6 +23184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pausemenu: {fileID: 403290494}
   isPaused: 0
+  lA: {fileID: 0}
 --- !u!114 &1965144734
 MonoBehaviour:
   m_ObjectHideFlags: 0

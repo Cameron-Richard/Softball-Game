@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class KonamiCode : MonoBehaviour
 {
+    private AudioSource audioSource;
+    private AudioClip soundClip;
+
     private static readonly KeyCode[] konamiCode =
     {
         KeyCode.UpArrow, KeyCode.UpArrow,
@@ -18,6 +21,11 @@ public class KonamiCode : MonoBehaviour
     private int currentIndex = 0;
 
     // Update is called once per frame
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    } 
     void Update()
     {
         if (Input.anyKeyDown)
@@ -29,7 +37,9 @@ public class KonamiCode : MonoBehaviour
                 if (currentIndex == konamiCode.Length)
                 {
                     // Konami Code entered correctly, transition to the desired scene
-                    TransitionToSecretScene();
+                    audioSource.clip = soundClip;
+                    audioSource.Play();
+                    //TransitionToSecretScene();
                 }
             }
             else

@@ -1326,10 +1326,14 @@ MonoBehaviour:
   sr: {fileID: 1426711067}
   skins:
   - {fileID: 21300000, guid: 4ef4aab8ed4d04644bfdfbc16db9bdbc, type: 3}
-  - {fileID: 21300000, guid: 5fe4df2a3808c2a46b20b1e417c6e554, type: 3}
+  - {fileID: 21300000, guid: ce71c7168ab8acd4bac628c4ba82a489, type: 3}
   - {fileID: 21300000, guid: ebaeef813f6d3314490117d80598f821, type: 3}
   - {fileID: 21300000, guid: 16d0d496a7c50a246886f6ad414723f6, type: 3}
   - {fileID: 21300000, guid: f7e1e7ab007ea694bb5a8fb3cc17ff30, type: 3}
+  - {fileID: 21300000, guid: 8134bef7feb64c04db6cd09523682b75, type: 3}
+  - {fileID: 21300000, guid: b17ab915333719c428e5966a36304d49, type: 3}
+  - {fileID: 21300000, guid: b24a0b0011eb74b459564529ed2e28c0, type: 3}
+  - {fileID: 21300000, guid: f7536899dc3286046aa746b1d2729304, type: 3}
   playerskin: {fileID: 1426711066}
 --- !u!4 &1506508914
 Transform:
@@ -2519,7 +2523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3991637687444317661, guid: 0c31236b2402f3d4eaa30de7224c9eb1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6442186932950544630, guid: 0c31236b2402f3d4eaa30de7224c9eb1, type: 3}
       propertyPath: m_Maskable
