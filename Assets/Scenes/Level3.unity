@@ -4374,9 +4374,49 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1) 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1805551752675294282, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1000751422}
+    - target: {fileID: 1805551752675294282, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1000751422}
+    - target: {fileID: 1805551752675294282, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HoverSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805551752675294282, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClickSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805551752675294282, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 4cbab3821398d384d997e1c8516c91fc, type: 3}
+    - target: {fileID: 1805551752675294282, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: cfd09ac6e763a9749a66e3f91a89f308, type: 3}
     - target: {fileID: 3526562544192387444, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
       propertyPath: m_text
       value: S
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606248954642678665, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1637785707}
+    - target: {fileID: 4606248954642678665, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006323091639335387, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1637785707}
+    - target: {fileID: 5006323091639335387, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
       objectReference: {fileID: 0}
     - target: {fileID: 7659100352788107300, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
       propertyPath: m_Pivot.x
@@ -4467,6 +4507,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+--- !u!114 &1000751422 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7435480048055234633, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
+  m_PrefabInstance: {fileID: 1000751421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d416736af095bc4abd60cc6fb02cd3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1016799933
 GameObject:
   m_ObjectHideFlags: 0
