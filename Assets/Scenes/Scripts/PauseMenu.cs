@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject Pausemenu;
     public bool isPaused;
     [SerializeField] DragNShoot lA;
+    public Animator transition;
 
     void Start()
     {
@@ -47,9 +48,9 @@ public class PauseMenu : MonoBehaviour
         lA.launchable = true;
     }
 
-    public void GoToMainMenuLevel()
+    public void GoToLevelSelectLevel()
     {
-        StartCoroutine(GoToMainMenu());
+        StartCoroutine(GoToLevelSelect());
     }
 
     public void GoToMainMenuFromLephelThrei()
@@ -63,8 +64,9 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    private IEnumerator GoToMainMenu()
+    private IEnumerator GoToLevelSelect()
     {
+        transition.SetTrigger("Start");
         yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("LevelSelect");
     }
