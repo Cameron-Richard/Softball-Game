@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8166138185971995973}
   m_Layer: 0
   m_Name: home_plate
-  m_TagString: Untagged
+  m_TagString: HomePlate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0079b45f7cd93284a81a03f9ff53359f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Winscreen: {fileID: 0}
+  Ball: {fileID: 0}
+  rankText: {fileID: 0}
+  deathCounter: {fileID: 0}
+  rb: {fileID: 0}
+  iS: {fileID: 0}
+  lA: {fileID: 0}
+  iP: {fileID: 0}
+  deathS: 0
+  deathA: 0
+  deathB: 0
+  deathC: 0
+  deathD: 0
+  deathF: 1

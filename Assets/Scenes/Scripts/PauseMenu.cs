@@ -48,9 +48,9 @@ public class PauseMenu : MonoBehaviour
         lA.launchable = true;
     }
 
-    public void GoToLevelSelectLevel()
+    public void GoToLevelSelect()
     {
-        StartCoroutine(GoToLevelSelect());
+        StartCoroutine(WaitThenLoadLevelSelect());
     }
 
     public void GoToMainMenuFromLephelThrei()
@@ -64,8 +64,10 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    private IEnumerator GoToLevelSelect()
+    private IEnumerator WaitThenLoadLevelSelect()
     {
+        Debug.Log("Steven");
+        Time.timeScale = 1f;
         transition.SetTrigger("Start");
         yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("LevelSelect");
