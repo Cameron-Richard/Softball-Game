@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject Pausemenu;
     public bool isPaused;
+    public Rigidbody2D rb;
+    public GameObject Ball;
     [SerializeField] DragNShoot lA;
     public Animator transition;
 
@@ -69,6 +71,10 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Steven");
         Time.timeScale = 1f;
         transition.SetTrigger("Start");
+        Ball.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        Ball.gameObject.GetComponent<LineRenderer>().enabled = false;
+        Ball.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("LevelSelect");
     }
