@@ -3201,8 +3201,9 @@ MonoBehaviour:
   bgmScene6: {fileID: 8300000, guid: f1930c3f3729f5b469e0c74d6b714fcc, type: 3}
   bgmScene7: {fileID: 8300000, guid: c06c7437f7df4e64aa13f3ebe1e2ccf5, type: 3}
   bgmScene8: {fileID: 8300000, guid: 47ab61ec7cbeff3449611f5da23f78a9, type: 3}
-  bgmScene9: {fileID: 8300000, guid: 442194ae9970b7a43a692e6be722e614, type: 3}
-  bgmScene10: {fileID: 8300000, guid: 7ed41685361870c46bf0371095abe813, type: 3}
+  bgmScene9: {fileID: 8300000, guid: 758e0884d9f4ca142a00a793540e8230, type: 3}
+  bgmScene10: {fileID: 8300000, guid: 442194ae9970b7a43a692e6be722e614, type: 3}
+  bgmScene11: {fileID: 8300000, guid: 68dfe4336512ac641a6e94274fc01b20, type: 3}
 --- !u!4 &999440360
 Transform:
   m_ObjectHideFlags: 0

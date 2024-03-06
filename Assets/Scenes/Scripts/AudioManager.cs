@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip bgmScene8;
     public AudioClip bgmScene9;
     public AudioClip bgmScene10;
+    public AudioClip bgmScene11;
 
     public static AudioManager instance;
 
@@ -85,9 +86,13 @@ public class AudioManager : MonoBehaviour
         {
             PlayBackgroundMusic(bgmScene9);
         }
-        else if (scene.name == "ShopMenu")
+        else if (scene.name == "Level6")
         {
             PlayBackgroundMusic(bgmScene10);
+        }
+        else if (scene.name == "ShopMenu")
+        {
+            PlayBackgroundMusic(bgmScene11);
         }
     }
 
