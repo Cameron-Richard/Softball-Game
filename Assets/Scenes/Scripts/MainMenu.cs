@@ -47,6 +47,11 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(waitThenLoadLevel5());
     }
 
+    public void PlayLevel6()
+    {
+        StartCoroutine(waitThenLoadLevel6());
+    }
+
     public void LoadShop()
     {
         StartCoroutine(waitThenLoadShopMenu());
@@ -117,6 +122,13 @@ public class MainMenu : MonoBehaviour
         transition.SetTrigger("Start");
         yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene("Level5");
+    }
+
+    private IEnumerator waitThenLoadLevel6()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene("Level6");
     }
 
     private IEnumerator waitThenLoadShopMenu()
