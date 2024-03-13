@@ -39,7 +39,7 @@ public class KonamiCode : MonoBehaviour
                     // Konami Code entered correctly, transition to the desired scene
                     audioSource.clip = soundClip;
                     audioSource.Play();
-                    //TransitionToSecretScene();
+                    TransitionToSecretScene();
                 }
             }
             else
