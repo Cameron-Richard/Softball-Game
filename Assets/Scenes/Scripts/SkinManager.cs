@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class SkinManager : MonoBehaviour
 {
@@ -9,29 +8,35 @@ public class SkinManager : MonoBehaviour
     public List<Sprite> skins = new List<Sprite>();
     private int selectedSkin = 0;
     public GameObject playerskin;
+    private string skinKey = "SelectedSkin";
+
+    private void Start()
+    {
+        // Load the selected skin index from PlayerPrefs when the game starts
+        if (PlayerPrefs.HasKey(skinKey))
+        {
+            selectedSkin = PlayerPrefs.GetInt(skinKey);
+            sr.sprite = skins[selectedSkin];
+        }
+    }
 
     public void NextOption()
     {
-        selectedSkin = selectedSkin + 1;
-        if(selectedSkin == skins.Count)
-        {
-            selectedSkin = 0;
-        }
+        selectedSkin = (selectedSkin + 1) % skins.Count;
         sr.sprite = skins[selectedSkin];
     }
 
     public void BackOption()
     {
-        selectedSkin = selectedSkin - 1;
-        if(selectedSkin < 0)
-        {
-            selectedSkin = skins.Count -1;
-        }
+        selectedSkin = (selectedSkin - 1 + skins.Count) % skins.Count;
         sr.sprite = skins[selectedSkin];
     }
 
     public void SaveSkin()
     {
-        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Scenes/Prefabs/SelectedPaul.prefab");
+        // Save the selected skin index to PlayerPrefs
+        PlayerPrefs.SetInt(skinKey, selectedSkin);
+        PlayerPrefs.Save();
     }
 }
+

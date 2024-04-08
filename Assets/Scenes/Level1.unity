@@ -963,11 +963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 325883454856299048, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1417965930405586785, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1805551752675294282, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4784,6 +4784,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f637c871cf7364347a5c9a66b0ece6ad, type: 3}
+--- !u!212 &1526379703 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7711667129429850701, guid: f637c871cf7364347a5c9a66b0ece6ad, type: 3}
+  m_PrefabInstance: {fileID: 1526379702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1532079885
 GameObject:
   m_ObjectHideFlags: 0
@@ -17018,11 +17023,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1637785706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52747b6f049e39344ae68a3625c5e000, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cd879b4143cf6d419de3742482fd5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedskin: {fileID: 3548351972218442777, guid: 2711ff83ca410684a9e1f4f65e383cd2, type: 3}
-  Player: {fileID: 491341771}
+  sr: {fileID: 1526379703}
+  skins: []
+  playerskin: {fileID: 491341771}
 --- !u!1001 &1657418480
 PrefabInstance:
   m_ObjectHideFlags: 0

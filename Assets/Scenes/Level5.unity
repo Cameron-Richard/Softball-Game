@@ -18810,8 +18810,6 @@ GameObject:
   - component: {fileID: 1965144733}
   - component: {fileID: 1965144734}
   - component: {fileID: 1965144735}
-  - component: {fileID: 1965144736}
-  - component: {fileID: 1965144737}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -18881,34 +18879,6 @@ MonoBehaviour:
   deathCount: 0
   deathText: {fileID: 1187196236}
   deathTextWin: {fileID: 1688027164}
---- !u!114 &1965144736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965144731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52747b6f049e39344ae68a3625c5e000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedskin: {fileID: 3548351972218442777, guid: 2711ff83ca410684a9e1f4f65e383cd2, type: 3}
-  Player: {fileID: 1468307810}
---- !u!114 &1965144737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965144731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52747b6f049e39344ae68a3625c5e000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedskin: {fileID: 3548351972218442777, guid: 2711ff83ca410684a9e1f4f65e383cd2, type: 3}
-  Player: {fileID: 1468307810}
 --- !u!1001 &1973276980
 PrefabInstance:
   m_ObjectHideFlags: 0

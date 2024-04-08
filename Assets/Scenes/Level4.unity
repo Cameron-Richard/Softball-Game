@@ -13394,6 +13394,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3319931573729663998, guid: f637c871cf7364347a5c9a66b0ece6ad, type: 3}
   m_PrefabInstance: {fileID: 1468307808}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1468307811 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7711667129429850701, guid: f637c871cf7364347a5c9a66b0ece6ad, type: 3}
+  m_PrefabInstance: {fileID: 1468307808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1468307820 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6184802485577458763, guid: f637c871cf7364347a5c9a66b0ece6ad, type: 3}
@@ -14999,8 +15004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52747b6f049e39344ae68a3625c5e000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedskin: {fileID: 3548351972218442777, guid: 2711ff83ca410684a9e1f4f65e383cd2, type: 3}
-  Player: {fileID: 1468307810}
+  sr: {fileID: 0}
 --- !u!114 &1965144737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15013,8 +15017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52747b6f049e39344ae68a3625c5e000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedskin: {fileID: 3548351972218442777, guid: 2711ff83ca410684a9e1f4f65e383cd2, type: 3}
-  Player: {fileID: 1468307810}
+  sr: {fileID: 1468307811}
 --- !u!1001 &1973983589
 PrefabInstance:
   m_ObjectHideFlags: 0
