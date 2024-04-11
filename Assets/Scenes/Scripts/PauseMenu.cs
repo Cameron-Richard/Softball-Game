@@ -9,7 +9,6 @@ public class PauseMenu : MonoBehaviour
     public bool isPaused;
     public Rigidbody2D rb;
     public GameObject Ball;
-    [SerializeField] DragNShoot lA;
     public Animator transition;
 
     void Start()
@@ -39,7 +38,6 @@ public class PauseMenu : MonoBehaviour
         Pausemenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
-        lA.launchable = false;
     }
 
     public void ResumeGame()
@@ -47,7 +45,6 @@ public class PauseMenu : MonoBehaviour
         Pausemenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
-        lA.launchable = true;
     }
 
     public void GoToLevelSelect()
@@ -55,15 +52,28 @@ public class PauseMenu : MonoBehaviour
         StartCoroutine(WaitThenLoadLevelSelect());
     }
 
+    public void GoToMainMenu()
+    {
+        StartCoroutine(WaitThenQuitGame());
+    }
+
     public void GoToMainMenuFromLephelThrei()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + -2);
     }
-    public void QuitGame()
+    private IEnumerator WaitThenQuitGame()
     {
-        Debug.Log("Quit!");
-        Application.Quit();
+        Debug.Log("Steven");
+        Time.timeScale = 1f;
+        transition.SetTrigger("Start");
+        Ball.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        Ball.gameObject.GetComponent<LineRenderer>().enabled = false;
+        Ball.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene("MainMenu");
+        
     }
 
     private IEnumerator WaitThenLoadLevelSelect()

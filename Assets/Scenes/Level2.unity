@@ -8748,7 +8748,7 @@ PrefabInstance:
       objectReference: {fileID: 1866285016}
     - target: {fileID: 5006323091639335387, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: GoToMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 6382646398634662867, guid: 5cd0014e5c016d6449608332c9661b9c, type: 3}
       propertyPath: m_LocalScale.y
