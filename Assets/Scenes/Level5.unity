@@ -18641,19 +18641,19 @@ PrefabInstance:
       objectReference: {fileID: 1468307810}
     - target: {fileID: 8166138185971995973, guid: e14c171413b0ded46b7276bb07f8aada, type: 3}
       propertyPath: deathA
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8166138185971995973, guid: e14c171413b0ded46b7276bb07f8aada, type: 3}
       propertyPath: deathB
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8166138185971995973, guid: e14c171413b0ded46b7276bb07f8aada, type: 3}
       propertyPath: deathC
-      value: 16
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8166138185971995973, guid: e14c171413b0ded46b7276bb07f8aada, type: 3}
       propertyPath: deathD
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8166138185971995973, guid: e14c171413b0ded46b7276bb07f8aada, type: 3}
       propertyPath: deathF
